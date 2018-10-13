@@ -3,7 +3,7 @@
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 
@@ -13,7 +13,7 @@ public class MagentoTest {
 	@Test
 	public void posCredentials() {
 		
-		WebDriver d=new ChromeDriver();
+		WebDriver d=new FirefoxDriver();
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		d.get("https://www.magento.com");
